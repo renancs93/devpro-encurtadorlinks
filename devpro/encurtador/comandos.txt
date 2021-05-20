@@ -1,0 +1,26 @@
+Lista de Comandos executados:
+
+- Instalação do Django
+pip install django
+
+Criacao do projeto Django
+django-admin startprojetc devpro . (substituir 'devpro' pelo <nomeProjeto>)
+
+Rodar projeto
+python manage.py runserver
+
+Inicialização de uma nova App do Django (acessar a pasta criada do projeto)
+python ../manage.py startapp encurtador (substituir 'encurtador' pelo <nomeApp>)
+
+
+Extra (Acesso ao Admin do Django):
+
+Criação das tabelas default do Django, através das migrations
+python manage.py migrate
+
+Criar um usuário para acesso ao Admin do Django (default: url_server/admin)
+python manage.py createsuperuser
+
+Gerar e Atualizar migrations (caso criado um novo modelo (model.py) e registrado a mesma (admin.py))
+python manage.py makemigrations
+python manage.py migrate
